@@ -21166,3 +21166,205 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
 2025-09-11 11:40:19,243:INFO:Defining Hyperparameters
 2025-09-11 11:40:19,383:INFO:Tuning with n_jobs=-1
 2025-09-11 11:40:19,383:INFO:Initializing optuna.integration.OptunaSearchCV
+2025-09-11 11:50:06,626:INFO:best_params: {'actual_estimator__n_neighbors': 1, 'actual_estimator__weights': 'distance', 'actual_estimator__metric': 'manhattan'}
+2025-09-11 11:50:06,632:INFO:Hyperparameter search completed
+2025-09-11 11:50:06,632:INFO:SubProcess create_model() called ==================================
+2025-09-11 11:50:06,632:INFO:Initializing create_model()
+2025-09-11 11:50:06,632:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022D62835A10>, estimator=KNeighborsRegressor(n_jobs=-1), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000022D65DA7090>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'n_neighbors': 1, 'weights': 'distance', 'metric': 'manhattan'})
+2025-09-11 11:50:06,632:INFO:Checking exceptions
+2025-09-11 11:50:06,634:INFO:Importing libraries
+2025-09-11 11:50:06,634:INFO:Copying training dataset
+2025-09-11 11:50:06,643:INFO:Defining folds
+2025-09-11 11:50:06,643:INFO:Declaring metric variables
+2025-09-11 11:50:06,647:INFO:Importing untrained model
+2025-09-11 11:50:06,647:INFO:Declaring custom model
+2025-09-11 11:50:06,654:INFO:K Neighbors Regressor Imported successfully
+2025-09-11 11:50:06,662:INFO:Starting cross validation
+2025-09-11 11:50:06,666:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-09-11 11:50:15,037:INFO:Calculating mean and std
+2025-09-11 11:50:15,037:INFO:Creating metrics dataframe
+2025-09-11 11:50:15,051:INFO:Finalizing model
+2025-09-11 11:50:15,931:INFO:Uploading results into container
+2025-09-11 11:50:15,933:INFO:Uploading model into container now
+2025-09-11 11:50:15,933:INFO:_master_model_container: 22
+2025-09-11 11:50:15,933:INFO:_display_container: 4
+2025-09-11 11:50:15,933:INFO:KNeighborsRegressor(metric='manhattan', n_jobs=-1, n_neighbors=1,
+                    weights='distance')
+2025-09-11 11:50:15,933:INFO:create_model() successfully completed......................................
+2025-09-11 11:50:16,080:INFO:SubProcess create_model() end ==================================
+2025-09-11 11:50:16,080:INFO:choose_better activated
+2025-09-11 11:50:16,084:INFO:SubProcess create_model() called ==================================
+2025-09-11 11:50:16,084:INFO:Initializing create_model()
+2025-09-11 11:50:16,084:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022D62835A10>, estimator=KNeighborsRegressor(n_jobs=-1), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-09-11 11:50:16,084:INFO:Checking exceptions
+2025-09-11 11:50:16,086:INFO:Importing libraries
+2025-09-11 11:50:16,086:INFO:Copying training dataset
+2025-09-11 11:50:16,092:INFO:Defining folds
+2025-09-11 11:50:16,092:INFO:Declaring metric variables
+2025-09-11 11:50:16,092:INFO:Importing untrained model
+2025-09-11 11:50:16,092:INFO:Declaring custom model
+2025-09-11 11:50:16,093:INFO:K Neighbors Regressor Imported successfully
+2025-09-11 11:50:16,093:INFO:Starting cross validation
+2025-09-11 11:50:16,095:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-09-11 11:50:20,754:INFO:Calculating mean and std
+2025-09-11 11:50:20,754:INFO:Creating metrics dataframe
+2025-09-11 11:50:20,754:INFO:Finalizing model
+2025-09-11 11:50:21,571:INFO:Uploading results into container
+2025-09-11 11:50:21,571:INFO:Uploading model into container now
+2025-09-11 11:50:21,587:INFO:_master_model_container: 23
+2025-09-11 11:50:21,587:INFO:_display_container: 5
+2025-09-11 11:50:21,587:INFO:KNeighborsRegressor(n_jobs=-1)
+2025-09-11 11:50:21,587:INFO:create_model() successfully completed......................................
+2025-09-11 11:50:21,687:INFO:SubProcess create_model() end ==================================
+2025-09-11 11:50:21,687:INFO:KNeighborsRegressor(n_jobs=-1) result for MAE is 1.3782
+2025-09-11 11:50:21,687:INFO:KNeighborsRegressor(metric='manhattan', n_jobs=-1, n_neighbors=1,
+                    weights='distance') result for MAE is 1.0932
+2025-09-11 11:50:21,687:INFO:KNeighborsRegressor(metric='manhattan', n_jobs=-1, n_neighbors=1,
+                    weights='distance') is best model
+2025-09-11 11:50:21,687:INFO:choose_better completed
+2025-09-11 11:50:21,703:INFO:_master_model_container: 23
+2025-09-11 11:50:21,703:INFO:_display_container: 4
+2025-09-11 11:50:21,703:INFO:KNeighborsRegressor(metric='manhattan', n_jobs=-1, n_neighbors=1,
+                    weights='distance')
+2025-09-11 11:50:21,703:INFO:tune_model() successfully completed......................................
+2025-09-11 11:50:21,861:INFO:Initializing plot_model()
+2025-09-11 11:50:21,861:INFO:plot_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022D62835A10>, estimator=KNeighborsRegressor(metric='manhattan', n_jobs=-1, n_neighbors=1,
+                    weights='distance'), plot=residuals, scale=2, save=True, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2025-09-11 11:50:21,861:INFO:Checking exceptions
+2025-09-11 11:50:21,865:INFO:Preloading libraries
+2025-09-11 11:50:21,867:INFO:Copying training dataset
+2025-09-11 11:50:21,867:INFO:Plot type: residuals
+2025-09-11 11:50:22,117:INFO:Fitting Model
+2025-09-11 11:50:22,638:INFO:Scoring test/hold-out set
+2025-09-11 11:50:22,882:INFO:Saving 'Residuals.png'
+2025-09-11 11:50:23,273:INFO:Visual Rendered Successfully
+2025-09-11 11:50:23,408:INFO:plot_model() successfully completed......................................
+2025-09-11 11:50:23,409:INFO:Initializing plot_model()
+2025-09-11 11:50:23,409:INFO:plot_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022D62835A10>, estimator=KNeighborsRegressor(metric='manhattan', n_jobs=-1, n_neighbors=1,
+                    weights='distance'), plot=feature, scale=2, save=True, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2025-09-11 11:50:23,409:INFO:Checking exceptions
+2025-09-11 11:51:06,708:INFO:Initializing plot_model()
+2025-09-11 11:51:06,708:INFO:plot_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022D62835A10>, estimator=KNeighborsRegressor(metric='manhattan', n_jobs=-1, n_neighbors=1,
+                    weights='distance'), plot=residuals, scale=2, save=True, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2025-09-11 11:51:06,708:INFO:Checking exceptions
+2025-09-11 11:51:06,718:INFO:Preloading libraries
+2025-09-11 11:51:06,720:INFO:Copying training dataset
+2025-09-11 11:51:06,720:INFO:Plot type: residuals
+2025-09-11 11:51:06,921:INFO:Fitting Model
+2025-09-11 11:51:07,433:INFO:Scoring test/hold-out set
+2025-09-11 11:51:07,678:INFO:Saving 'Residuals.png'
+2025-09-11 11:51:08,134:INFO:Visual Rendered Successfully
+2025-09-11 11:51:08,268:INFO:plot_model() successfully completed......................................
+2025-09-11 11:51:13,036:INFO:Initializing predict_model()
+2025-09-11 11:51:13,036:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022D62835A10>, estimator=KNeighborsRegressor(metric='manhattan', n_jobs=-1, n_neighbors=1,
+                    weights='distance'), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000022D01C02480>)
+2025-09-11 11:51:13,036:INFO:Checking exceptions
+2025-09-11 11:51:13,036:INFO:Preloading libraries
+2025-09-11 11:51:37,910:INFO:Initializing finalize_model()
+2025-09-11 11:51:37,910:INFO:finalize_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022D62835A10>, estimator=KNeighborsRegressor(metric='manhattan', n_jobs=-1, n_neighbors=1,
+                    weights='distance'), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2025-09-11 11:51:37,911:INFO:Finalizing KNeighborsRegressor(metric='manhattan', n_jobs=-1, n_neighbors=1,
+                    weights='distance')
+2025-09-11 11:51:37,914:INFO:Initializing create_model()
+2025-09-11 11:51:37,915:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022D62835A10>, estimator=KNeighborsRegressor(metric='manhattan', n_jobs=-1, n_neighbors=1,
+                    weights='distance'), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2025-09-11 11:51:37,915:INFO:Checking exceptions
+2025-09-11 11:51:37,916:INFO:Importing libraries
+2025-09-11 11:51:37,916:INFO:Copying training dataset
+2025-09-11 11:51:37,917:INFO:Defining folds
+2025-09-11 11:51:37,917:INFO:Declaring metric variables
+2025-09-11 11:51:37,917:INFO:Importing untrained model
+2025-09-11 11:51:37,917:INFO:Declaring custom model
+2025-09-11 11:51:37,917:INFO:K Neighbors Regressor Imported successfully
+2025-09-11 11:51:37,920:INFO:Cross validation set to False
+2025-09-11 11:51:37,920:INFO:Fitting Model
+2025-09-11 11:51:39,085:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['TimeStart', 'TimeStop',
+                                             'ProductionDate', 'ApproveDate',
+                                             'CreateDate'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Qty', 'isNC'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=...
+                                    transformer=RemoveMulticollinearity(threshold=0.95))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 KNeighborsRegressor(metric='manhattan', n_jobs=-1,
+                                     n_neighbors=1, weights='distance'))])
+2025-09-11 11:51:39,085:INFO:create_model() successfully completed......................................
+2025-09-11 11:51:39,233:INFO:_master_model_container: 23
+2025-09-11 11:51:39,233:INFO:_display_container: 5
+2025-09-11 11:51:39,233:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['TimeStart', 'TimeStop',
+                                             'ProductionDate', 'ApproveDate',
+                                             'CreateDate'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Qty', 'isNC'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=...
+                                    transformer=RemoveMulticollinearity(threshold=0.95))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 KNeighborsRegressor(metric='manhattan', n_jobs=-1,
+                                     n_neighbors=1, weights='distance'))])
+2025-09-11 11:51:39,233:INFO:finalize_model() successfully completed......................................
+2025-09-11 11:51:49,666:INFO:Initializing save_model()
+2025-09-11 11:51:49,666:INFO:save_model(model=KNeighborsRegressor(metric='manhattan', n_jobs=-1, n_neighbors=1,
+                    weights='distance'), model_name=tuned_knn_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\SBM_ME~1\AppData\Local\Temp\joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['TimeStart', 'TimeStop',
+                                             'ProductionDate', 'ApproveDate',
+                                             'CreateDate'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Qty', 'isNC'],
+                                    transformer=SimpleImputer())),
+                ('categ...
+                                                              handle_missing='return_nan'))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.95))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2025-09-11 11:51:49,666:INFO:Adding model into prep_pipe
+2025-09-11 11:51:49,699:INFO:tuned_knn_model.pkl saved in current working directory
+2025-09-11 11:51:49,705:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['TimeStart', 'TimeStop',
+                                             'ProductionDate', 'ApproveDate',
+                                             'CreateDate'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Qty', 'isNC'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=...
+                                    transformer=RemoveMulticollinearity(threshold=0.95))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 KNeighborsRegressor(metric='manhattan', n_jobs=-1,
+                                     n_neighbors=1, weights='distance'))])
+2025-09-11 11:51:49,705:INFO:save_model() successfully completed......................................
+2025-09-11 11:56:10,537:INFO:Soft dependency imported: gradio: 5.33.1
+2025-09-11 12:06:38,367:INFO:Soft dependency imported: m2cgen: 0.10.0
